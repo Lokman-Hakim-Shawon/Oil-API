@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-njau7mnmo48j6^350re9uubdn-!w86_6gyakwkw6la#p*ljc*2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
@@ -48,7 +48,7 @@ REST_FRAMEWORK={
         'rest_framework.filters.OrderingFilter'
         ),
     "DEFAULT_PAGINATION_CLASS":('rest_framework.pagination.PageNumberPagination'),
-    "PAGE-SIZE":10,
+    "PAGE_SIZE":10,
 }
 
 MIDDLEWARE = [
