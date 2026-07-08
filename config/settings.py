@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-njau7mnmo48j6^350re9uubdn-!w86_6gyakwkw6la#p*ljc*2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     ".onrender.com",
@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'django_filters',
     'accounts',
     'categories',
     'products',
@@ -46,11 +47,12 @@ INSTALLED_APPS = [
 REST_FRAMEWORK={
     # "DEFAULT_AUTHENTICATION_CLASSES":('rest_framework-simplejwt.authentication.JWTAuthentication'),
     "DEFAULT_PERMISSION_CLASSES":('rest_framework.permissions.AllowAny',),
-    "DEFAULT_FILTER_BACKENDS":(
-        # 'django-filters.rest_framework.DjangoFilterBackend',
-        'rest_framework.filters.SearchFilter',
-        'rest_framework.filters.OrderingFilter'
-        ),
+        "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+        "rest_framework.filters.SearchFilter",
+        "rest_framework.filters.OrderingFilter",
+    ],
+
     "DEFAULT_PAGINATION_CLASS":('rest_framework.pagination.PageNumberPagination'),
     "PAGE_SIZE":10,
 }
