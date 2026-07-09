@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from  rest_framework.generics import CreateAPIView,RetrieveUpdateDestroyAPIView
+from  rest_framework.generics import ListCreateAPIView,RetrieveUpdateDestroyAPIView
 from .models import Payment
 from .serializers import PaymentSerializer
 # Create your views here.
 
-class PaymentList(CreateAPIView):
+class PaymentList(ListCreateAPIView):
     queryset=Payment.objects.all()
     serializer_class=PaymentSerializer
     
