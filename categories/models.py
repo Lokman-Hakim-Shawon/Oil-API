@@ -4,7 +4,7 @@ from django.utils.text import slugify
 class Category(models.Model):
     name=models.CharField(max_length=100,unique=True)
     slug=models.SlugField(unique=True, blank=True,null=True)
-    image=models.URLField(blank=True,null=True)
+    image=models.ImageField(upload_to="categories/", blank=True,null=True)
     create_at=models.DateTimeField(auto_now=True)
     updated_at=models.DateTimeField(auto_now=True)
     
