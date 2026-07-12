@@ -93,10 +93,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'oil_api',
-        'USER':'postgres',
-        'PASSWORD':'12345678',
-        'HOST':'https://oil-api-4.onrender.com/',
+        'NAME': 'oil_api_db',
+        'USER':'oil_api_db_user',
+        'PASSWORD':'XwVAnT95UhH2NPQUtOwK7y7E5LJU6VM8',
+        'HOST':'dpg-d99ruook1i2s73emfb20-a',
         'PORT':'5432',
     }
 }
