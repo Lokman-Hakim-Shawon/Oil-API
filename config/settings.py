@@ -96,8 +96,8 @@ DATABASES = {
         'NAME': 'oil_api',
         'USER':'postgres',
         'PASSWORD':'12345678',
-        'HOST':'localhost',
-        'POST':'5432',
+        'HOST':'https://oil-api-4.onrender.com/',
+        'PORT':'5432',
     }
 }
 
