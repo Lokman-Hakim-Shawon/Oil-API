@@ -95,7 +95,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'oil_api_db',
         'USER':'oil_api_user',
-        'PASSWORD':'XwVAnT95UhH2NPQUtOwK7y7E5LJU6VM8',
+        'PASSWORD':'eK5skZ8Q68vg8bwBR6s678RlC8eKkosk',
         'HOST':'dpg-d9djkqn41pts73d9oumg-a',
         'PORT':'5432',
     }
