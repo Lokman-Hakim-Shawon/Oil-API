@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'oil_api_db',
+        'NAME': 'oil_api',
         'USER':'oil_api_user',
         'PASSWORD':'eK5skZ8Q68vg8bwBR6s678RlC8eKkosk',
         'HOST':'dpg-d9djkqn41pts73d9oumg-a',
