@@ -96,7 +96,7 @@ DATABASES = {
         'NAME': 'oil_api_db',
         'USER':'oil_api_user',
         'PASSWORD':'XwVAnT95UhH2NPQUtOwK7y7E5LJU6VM8',
-        'HOST':'postgresql://oil_api_user:eK5skZ8Q68vg8bwBR6s678RlC8eKkosk@dpg-d9djkqn41pts73d9oumg-a.ohio-postgres.render.com/oil_api',
+        'HOST':'dpg-d9djkqn41pts73d9oumg-a',
         'PORT':'5432',
     }
 }
