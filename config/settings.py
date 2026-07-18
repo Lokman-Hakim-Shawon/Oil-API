@@ -94,9 +94,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'oil_api_db',
-        'USER':'oil_api_db_user',
+        'USER':'oil_api_user',
         'PASSWORD':'XwVAnT95UhH2NPQUtOwK7y7E5LJU6VM8',
-        'HOST':'dpg-d99ruook1i2s73emfb20-a',
+        'HOST':'postgresql://oil_api_user:eK5skZ8Q68vg8bwBR6s678RlC8eKkosk@dpg-d9djkqn41pts73d9oumg-a.ohio-postgres.render.com/oil_api',
         'PORT':'5432',
     }
 }
